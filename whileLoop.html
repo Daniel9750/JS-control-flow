@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript While Loop</h2>
+
+<p id="result"></p>
+
+<script>
+const series = ["Game of Thrones", "Breaking Bad", "The Last of Us", "Invincible"];
+
+let i = 0;
+let text = "";
+while (series[i]) {
+  text += series[i] + "<br>";
+  i++;
+}
+
+document.getElementById("result").innerHTML = text;
+</script>
+
+</body>
+</html>
