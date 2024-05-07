@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Switch</h2>
+
+<p>Displays a different message depending on the day:</p>
+
+<p id="result"></p>
+
+<script>
+let text;
+switch (new Date().getDay()) {
+  case 5:
+    text = "It's finally friday!";
+    break;
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Waiting for the Weekend...";
+}
+document.getElementById("result").innerHTML = text;
+</script>
+
+</body>
+</html>
