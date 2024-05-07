@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript if else</h2>
+
+<p>Displays a different message depending on the time:</p>
+
+<p id="result"></p>
+
+<script>
+const time = new Date().getHours();
+if (time > 8 && time < 18) {
+  document.getElementById("result").innerHTML = "Good day!";
+} else if (time > 18 && time < 20) {
+  document.getElementById("result").innerHTML = "Good evening!";
+} else {
+  document.getElementById("result").innerHTML = "Good night!";
+}
+</script>
+
+</body>
+</html>
